@@ -1,8 +1,7 @@
 import { useEffect } from 'react';
 import './CategoryNav.css';
-import data from '../data/tools.json';
 import CategoryNavItem from './CategoryNavItem';
-import type { Category } from '../types';
+import { getWebMCPCategories, getWebMCPCategoryTitle } from '../utils/webmcp';
 
 interface CategoryNavProps {
     filter: string;
@@ -14,11 +13,12 @@ interface NavItem {
 }
 
 export default function CategoryNav({ filter }: CategoryNavProps) {
+    const categories = getWebMCPCategories();
     const navItems: NavItem[] = [
-        { title: 'All Tools', category: 'all' },
-        ...(data.tools as Category[]).map(cat => ({
-            title: cat.title,
-            category: cat.category,
+        { title: 'All Websites', category: 'all' },
+        ...categories.map((category) => ({
+            title: getWebMCPCategoryTitle(category),
+            category,
         })),
     ];
 

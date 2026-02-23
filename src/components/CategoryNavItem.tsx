@@ -1,8 +1,7 @@
 import { navigate } from 'astro:transitions/client';
 import { useState, useEffect, useRef, useMemo } from 'react';
-import data from '../data/tools.json';
 import './CategoryNavItem.css';
-import type { Category } from '../types';
+import { getWebMCPSites } from '../utils/webmcp';
 
 interface CategoryNavItemProps {
     title: string;
@@ -28,10 +27,13 @@ export default function CategoryNavItem({
     };
 
     const categoryCount = useMemo(() => {
+        const sites = getWebMCPSites();
+
         if (category === 'all') {
-            return (data.tools as Category[]).reduce((acc, item) => acc + item.content.length, 0);
+            return sites.length;
         }
-        return (data.tools as Category[]).find((item) => item.category === category)?.content.length || 0;
+
+        return sites.filter((site) => site.categories.includes(category)).length;
     }, [category]);
 
     useEffect(() => {

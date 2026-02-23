@@ -3,15 +3,17 @@ import Fuse from 'fuse.js';
 import Card from './Card';
 import EmptyState, { SearchIcon } from './EmptyState';
 import './CardsContainer.css';
-import data from '../data/tools.json';
-import type { Tool, Category } from '../types';
+import type { Tool, WebMCPSite } from '../types';
 import { toolComparators, seededShuffle, type SortKey } from '../utils/sorting';
 import { isRecentlyAdded } from '../utils/dates';
+import { getWebMCPSites } from '../utils/webmcp';
 
 const ITEMS_PER_PAGE = 32;
 
 interface ToolWithCategory extends Tool {
     category: string;
+    tags: string[];
+    categories: string[];
 }
 
 const fuseOptions = {
@@ -19,7 +21,7 @@ const fuseOptions = {
         { name: 'title', weight: 0.4 },
         { name: 'body', weight: 0.3 },
         { name: 'category', weight: 0.2 },
-        { name: 'tag', weight: 0.1 }
+        { name: 'tags', weight: 0.1 }
     ],
     threshold: 0.3,
     includeScore: true,
@@ -67,12 +69,19 @@ export default function CardsContainer({
     }, []);
 
     const allFlatTools = useMemo((): ToolWithCategory[] => {
-        return (data.tools as Category[]).flatMap((item) =>
-            item.content.map((tool) => ({
-                ...tool,
-                category: item.category,
-            }))
-        );
+        return getWebMCPSites().map((site: WebMCPSite) => {
+            const primaryCategory = site.categories[0] || 'other';
+            return {
+                title: site.name,
+                body: `WebMCP: ${site.webmcp.type} · ${site.webmcp.status}`,
+                url: site.url,
+                tag: site.tags[0] || site.webmcp.type,
+                'date-added': '',
+                category: primaryCategory,
+                categories: site.categories,
+                tags: site.tags,
+            };
+        });
     }, []);
 
     const fuse = useMemo(() => {
@@ -86,22 +95,17 @@ export default function CardsContainer({
             const results = fuse.search(searchQuery);
             base = results.map(result => result.item);
             if (filter !== 'all') {
-                base = base.filter(tool => tool.category === filter);
+                base = base.filter(tool => tool.categories.includes(filter));
             }
         } else {
-            base = (data.tools as Category[])
-                .filter((item) => filter === 'all' || filter === item.category)
-                .flatMap((item) =>
-                    item.content.map((tool) => ({
-                        ...tool,
-                        category: item.category,
-                    }))
-                );
+            base = filter === 'all'
+                ? allFlatTools
+                : allFlatTools.filter((tool) => tool.categories.includes(filter));
         }
 
         // Filter for new tools (added within last 30 days)
         if (filterNew) {
-            base = base.filter((tool) => isRecentlyAdded(tool['date-added'], 30));
+            base = base.filter((tool) => !!tool['date-added'] && isRecentlyAdded(tool['date-added'], 30));
         }
 
         if (sort === 'random') {
@@ -196,7 +200,7 @@ export default function CardsContainer({
                 <EmptyState
                     icon={<SearchIcon />}
                     message={`No results found for "${searchQuery}" in this category.`}
-                    actionText="Search All Tools"
+                    actionText="Search All Websites"
                     actionHref="/"
                 />
             </section>

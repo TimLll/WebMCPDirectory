@@ -1,23 +1,17 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Dashboard from "../components/Dashboard";
-import ItemListSchema from "../components/schema/ItemListSchema.astro";
 import BreadcrumbSchema from "../components/schema/BreadcrumbSchema.astro";
-import data from "../data/tools.json";
+import { getWebMCPCategories, getWebMCPCategoryTitle } from "../utils/webmcp";
 
 export function getStaticPaths() {
-  // Derive paths from data instead of hardcoding
-  return data.tools.map((cat: any) => ({
-    params: { category: cat.category }
+  return getWebMCPCategories().map((category) => ({
+    params: { category }
   }));
 }
 
 const { category } = Astro.params;
-
-// Get tools for this category
-const categoryData = data.tools.find((cat: any) => cat.category === category);
-const categoryTools = categoryData?.content || [];
-const categoryTitle = categoryData?.title || category;
+const categoryTitle = getWebMCPCategoryTitle(category as string);
 
 // Breadcrumb data
 const breadcrumbs = [
@@ -33,7 +27,6 @@ const breadcrumbs = [
   showSearch={true}
   searchPlaceholder={`Search in ${categoryTitle}...`}
 >
-  <ItemListSchema items={categoryTools} listName={`${categoryTitle} Tools`} />
   <BreadcrumbSchema items={breadcrumbs} />
   <main id="main-content">
     <Dashboard client:load category={category} transition:persist />
