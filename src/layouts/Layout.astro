@@ -70,7 +70,7 @@ const {
         <link
             rel="icon"
             type="image/svg+xml"
-            href={pageFavicon || "/rise-of-machine.svg"}
+            href={pageFavicon || "/public/favicons/WebMCPDirectory.svg"}
         />
         <meta name="generator" content={Astro.generator} />
         <title>
@@ -133,7 +133,7 @@ const {
                 <div class="logo">
                     <a href="/" aria-label="home page" tabindex="-1"
                         ><img
-                            src="/public/favicons/WebMCPDirectory_100p.png"
+                            src="/public/favicons/WebMCPDirectory.svg"
                             width="32"
                             height="32"
                             alt="WebMCP Directory"
@@ -183,7 +183,7 @@ const {
 
         <section class="masthead">
             <div class="masthead-inner">
-                <p class="masthead-kicker">WebMCP Directory</p>
+                <!-- <p class="masthead-kicker">WebMCP Directory</p> -->
                 <h1 class="masthead-title">{title}</h1>
                 <p class="masthead-tagline">{tagline}</p>
                 {
@@ -257,10 +257,10 @@ const {
             grab;
     }
     html[data-new-ui-theme*="dark"] {
-        --link: #007bff;
-        --link-hover: #007bff;
-        --link-visited: #007bff;
-        --border-focus: #007bff;
+        --link: var(--blue5);
+        --link-hover: var(--blue5);
+        --link-visited: var(--blue5);
+        --border-focus: var(--blue5);
     }
 
     html {
@@ -377,9 +377,9 @@ const {
     }
     .masthead-title {
         margin: 0;
-        font-size: var(--desktop-h2);
+        font-size: var(--desktop-heading-02);
         line-height: var(--lh-desktop-h2);
-        color: var(--content-primary);
+        color: var(--blue5);
     }
     .masthead-tagline {
         margin: var(--spacing-03) 0 0 0;

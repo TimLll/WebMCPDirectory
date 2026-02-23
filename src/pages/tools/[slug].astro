@@ -61,7 +61,7 @@ const domain = extractDomain(tool.url || "");
 const formattedDate = formatDate(tool["date-added"]);
 const siteUrl = Astro.site?.toString().replace(/\/$/, "") || "";
 const canonicalUrl = siteUrl ? `${siteUrl}/tools/${tool.slug}` : `/tools/${tool.slug}`;
-const faviconUrl = `/favicons/${slug}.png`;
+const faviconUrl = "/public/favicons/WebMCPDirectory.svg";
 const fallbackPath = category === "all" ? "/" : `/${category}`;
 
 let meta: any = {};
@@ -323,7 +323,7 @@ const breadcrumbs = [
                       data-astro-history="replace"
                     >
                       <img
-                        src={`/favicons/${t.slug}.png`}
+                        src="/public/favicons/WebMCPDirectory.svg"
                         alt=""
                         class="related-icon"
                         onerror="this.style.display='none'"
