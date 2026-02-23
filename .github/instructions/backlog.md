@@ -29,6 +29,16 @@
   - Datei: `src/components/SearchInput.tsx`
   - Ziel: Verifizieren, dass Shortcut zuverlässig den Fokus ins Suchfeld setzt und das sichtbare Shortcut-Hint zur Funktion passt.
 
+### P1
+- Default-Sortierung der Websites alphabetisch ergänzen
+  - Datei: `src/components/CardsContainer.tsx`, ggf. Sortier-Utilities unter `src/utils/`
+  - Ziel: Ohne aktive Filter/Sortieraktion sollen Website-Karten standardmäßig A→Z nach Name dargestellt werden.
+
+### P1
+- Neue Hintergrundfarbe für Header und Karten definieren
+  - Datei: `src/layouts/Layout.astro`, `src/components/Card.css`
+  - Ziel: Für Masthead-Container und Kartenhintergrund eine abgestimmte neue Theme-Farbe einführen (über Design-Token/Variablen, keine Hardcodes).
+
 ### P2
 - Detailseite auf WebMCP-Datenmodell migrieren
   - Datei: `src/pages/tools/[slug].astro`
@@ -45,14 +55,16 @@
   - Ziel: Alte Meldungen in neues WebMCP-Schema überführen oder als legacy markieren.
 
 ## Was wurde geändert?
-- Drei neue Backlog-Punkte ergänzt:
+- Fünf neue Backlog-Punkte ergänzt:
   - Submit-Button-Funktionalität prüfen.
   - Fire-Icon-Hoverfarbe und Tooltip schärfen.
   - Search-Shortcut `⌘K`/`Ctrl+K` funktional prüfen.
+  - Alphabetische Default-Sortierung der Websites ergänzen.
+  - Neue Hintergrundfarbe für Header und Karten definieren.
 
 ## Warum?
-- Die offenen UI-/UX-Prüfungen aus dem letzten Review bleiben sichtbar priorisiert und gehen nicht im Chat-Verlauf verloren.
+- Offene UI-/UX- und Darstellungsanforderungen bleiben sichtbar priorisiert und gehen nicht im Chat-Verlauf verloren.
 
 ## Wie testen/prüfen?
-- Prüfen, dass die drei neuen Punkte unter `## Priorität` als eigene Aufgaben enthalten sind.
-- Bei Umsetzung: Funktionstest für Submit-Flow, Hover/Tooltip-Verhalten am Fire-Icon und Shortcut-Test für `⌘K`/`Ctrl+K` durchführen.
+- Prüfen, dass die fünf neuen Punkte unter `## Priorität` als eigene Aufgaben enthalten sind.
+- Bei Umsetzung: zusätzlich visuell prüfen, dass Header/Karten neue Hintergrundfarbe nutzen, und funktional prüfen, dass die Standardliste alphabetisch sortiert ist.
