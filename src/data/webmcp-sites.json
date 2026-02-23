@@ -1,0 +1,121 @@
+{
+  "sites": [
+    {
+      "name": "KAYAK",
+      "url": "https://www.kayak.com",
+      "categories": ["travel"],
+      "tags": ["declarative", "inspector-verified", "tools:search"],
+      "webmcp": {
+        "type": "declarative",
+        "status": "confirmed",
+        "evidence": [
+          "https://example.com/evidence/kayak-inspector-export.json"
+        ]
+      }
+    },
+    {
+      "name": "Expedia",
+      "url": "https://www.expedia.com",
+      "categories": ["travel"],
+      "tags": ["imperative", "self-reported", "tools:booking"],
+      "webmcp": {
+        "type": "imperative",
+        "status": "self-reported",
+        "evidence": [
+          "https://example.com/evidence/expedia-issue-thread"
+        ]
+      }
+    },
+    {
+      "name": "Shopify",
+      "url": "https://www.shopify.com",
+      "categories": ["ecommerce"],
+      "tags": ["mixed", "suspected"],
+      "webmcp": {
+        "type": "mixed",
+        "status": "suspected",
+        "evidence": [
+          "https://example.com/evidence/shopify-observation-notes"
+        ]
+      }
+    },
+    {
+      "name": "Notion",
+      "url": "https://www.notion.so",
+      "categories": ["productivity"],
+      "tags": ["unknown", "chrome-canary"],
+      "webmcp": {
+        "type": "unknown",
+        "status": "suspected",
+        "evidence": [
+          "https://example.com/evidence/notion-canary-screenshot"
+        ]
+      }
+    },
+    {
+      "name": "GitHub",
+      "url": "https://github.com",
+      "categories": ["developer-tools"],
+      "tags": ["mixed", "inspector-verified", "tools:search"],
+      "webmcp": {
+        "type": "mixed",
+        "status": "confirmed",
+        "evidence": [
+          "https://example.com/evidence/github-inspector-export.json"
+        ]
+      }
+    },
+    {
+      "name": "Figma",
+      "url": "https://www.figma.com",
+      "categories": ["developer-tools", "productivity"],
+      "tags": ["declarative", "self-reported"],
+      "webmcp": {
+        "type": "declarative",
+        "status": "self-reported",
+        "evidence": [
+          "https://example.com/evidence/figma-community-post"
+        ]
+      }
+    },
+    {
+      "name": "YouTube",
+      "url": "https://www.youtube.com",
+      "categories": ["media"],
+      "tags": ["imperative", "suspected"],
+      "webmcp": {
+        "type": "imperative",
+        "status": "suspected",
+        "evidence": [
+          "https://example.com/evidence/youtube-network-capture"
+        ]
+      }
+    },
+    {
+      "name": "Stripe Dashboard",
+      "url": "https://dashboard.stripe.com",
+      "categories": ["finance"],
+      "tags": ["mixed", "inspector-verified"],
+      "webmcp": {
+        "type": "mixed",
+        "status": "confirmed",
+        "evidence": [
+          "https://example.com/evidence/stripe-inspector-export.json"
+        ]
+      }
+    },
+    {
+      "name": "WebMCP Playground",
+      "url": "https://webmcp.dev/playground",
+      "categories": ["demos", "other"],
+      "tags": ["declarative", "inspector-verified", "chrome-canary"],
+      "webmcp": {
+        "type": "declarative",
+        "status": "confirmed",
+        "evidence": [
+          "https://example.com/evidence/webmcp-playground-export.json"
+        ]
+      }
+    }
+  ]
+}

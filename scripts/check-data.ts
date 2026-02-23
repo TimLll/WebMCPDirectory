@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import type { ToolsConfig, Category, Tool } from '../src/types/index.ts';
+import type { ToolsConfig, Category, Tool, WebMCPSitesConfig, WebMCPSite } from '../src/types/index.ts';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -13,6 +13,7 @@ interface ValidationIssues {
     missing_slug: string[];
     out_of_order: string[];
     invalid_structure: string[];
+    webmcp_invalid: string[];
 }
 
 const issues: ValidationIssues = {
@@ -21,7 +22,8 @@ const issues: ValidationIssues = {
     missing_ref: [],
     missing_slug: [],
     out_of_order: [],
-    invalid_structure: []
+    invalid_structure: [],
+    webmcp_invalid: []
 };
 
 let totalTools = 0;
@@ -29,6 +31,49 @@ let totalSplitTools = 0;
 
 const toolsPath = path.join(__dirname, '../src/data/tools.json');
 const splitDataDir = path.join(__dirname, '../src/data/tools');
+const webmcpSitesPath = path.join(__dirname, '../src/data/webmcp-sites.json');
+
+function validateWebMCPSite(site: WebMCPSite, index: number) {
+    const identifier = `${site.name || `site#${index + 1}`} (webmcp-sites.json)`;
+
+    if (!site.name) {
+        issues.webmcp_invalid.push(`${identifier} - missing name`);
+    }
+
+    if (!site.url) {
+        issues.webmcp_invalid.push(`${identifier} - missing url`);
+    } else if (!site.url.startsWith('http://') && !site.url.startsWith('https://')) {
+        issues.webmcp_invalid.push(`${identifier} - url missing protocol`);
+    }
+
+    if (!Array.isArray(site.categories) || site.categories.length === 0) {
+        issues.webmcp_invalid.push(`${identifier} - categories must be a non-empty array`);
+    }
+
+    if (!Array.isArray(site.tags)) {
+        issues.webmcp_invalid.push(`${identifier} - tags must be an array`);
+    }
+
+    if (!site.webmcp) {
+        issues.webmcp_invalid.push(`${identifier} - missing webmcp object`);
+        return;
+    }
+
+    const validTypes = new Set(['declarative', 'imperative', 'mixed', 'unknown']);
+    const validStatuses = new Set(['confirmed', 'self-reported', 'suspected']);
+
+    if (!validTypes.has(site.webmcp.type)) {
+        issues.webmcp_invalid.push(`${identifier} - invalid webmcp.type: ${site.webmcp.type}`);
+    }
+
+    if (!validStatuses.has(site.webmcp.status)) {
+        issues.webmcp_invalid.push(`${identifier} - invalid webmcp.status: ${site.webmcp.status}`);
+    }
+
+    if (!Array.isArray(site.webmcp.evidence) || site.webmcp.evidence.length === 0) {
+        issues.webmcp_invalid.push(`${identifier} - webmcp.evidence must be a non-empty array`);
+    }
+}
 
 function validateTool(tool: Tool, source: string) {
     const identifier = `${tool.title} (${source})`;
@@ -100,6 +145,18 @@ try {
         });
     }
 
+    // 3. Check WebMCP seed dataset
+    if (fs.existsSync(webmcpSitesPath)) {
+        console.log("Checking webmcp-sites.json...");
+        const webmcpData: WebMCPSitesConfig = JSON.parse(fs.readFileSync(webmcpSitesPath, 'utf-8'));
+
+        if (!Array.isArray(webmcpData.sites)) {
+            issues.invalid_structure.push('File: webmcp-sites.json - Expected { sites: [] } structure');
+        } else {
+            webmcpData.sites.forEach((site, index) => validateWebMCPSite(site, index));
+        }
+    }
+
     // --- Reporting ---
     console.log(`\nReport Summary:`);
     console.log(`Total tools processed: ${totalTools} (+ ${totalSplitTools} split)`);
@@ -133,6 +190,11 @@ try {
     if (issues.invalid_structure.length > 0) {
         console.log("\n❌ Invalid JSON Structure (Split Files):");
         issues.invalid_structure.forEach(i => console.log(`   - ${i}`));
+    }
+
+    if (issues.webmcp_invalid.length > 0) {
+        console.log("\n❌ Invalid WebMCP Dataset Entries:");
+        issues.webmcp_invalid.forEach(i => console.log(`   - ${i}`));
     }
 
     const issueCount = Object.values(issues).flat().length;

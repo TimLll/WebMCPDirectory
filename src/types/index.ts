@@ -17,6 +17,28 @@ export interface ToolsConfig {
     tools: Category[];
 }
 
+export type WebMCPType = 'declarative' | 'imperative' | 'mixed' | 'unknown';
+
+export type WebMCPStatus = 'confirmed' | 'self-reported' | 'suspected';
+
+export interface WebMCPInfo {
+    type: WebMCPType;
+    status: WebMCPStatus;
+    evidence: string[];
+}
+
+export interface WebMCPSite {
+    name: string;
+    url: string;
+    categories: string[];
+    tags: string[];
+    webmcp: WebMCPInfo;
+}
+
+export interface WebMCPSitesConfig {
+    sites: WebMCPSite[];
+}
+
 export interface MetadataEntry {
     slug: string;
     title?: string | undefined;
