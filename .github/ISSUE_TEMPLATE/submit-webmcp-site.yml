@@ -1,0 +1,111 @@
+name: Submit WebMCP Site
+description: Suggest a website that supports WebMCP for inclusion in the directory.
+title: "[Submit] <site name>"
+labels:
+  - submission
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing a WebMCP website.
+
+        Please provide verifiable evidence and complete all required fields.
+
+  - type: input
+    id: site_name
+    attributes:
+      label: Site name
+      placeholder: e.g. KAYAK
+    validations:
+      required: true
+
+  - type: input
+    id: site_url
+    attributes:
+      label: Site URL
+      placeholder: https://example.com
+      description: Must include protocol (https://)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: categories
+    attributes:
+      label: Categories
+      description: Select one or more categories shown in the directory.
+      multiple: true
+      options:
+        - travel
+        - ecommerce
+        - productivity
+        - developer-tools
+        - demos
+        - media
+        - finance
+        - other
+    validations:
+      required: true
+
+  - type: textarea
+    id: tags
+    attributes:
+      label: Tags
+      description: Comma-separated tags.
+      placeholder: declarative, inspector-verified, tools:search
+    validations:
+      required: true
+
+  - type: dropdown
+    id: webmcp_type
+    attributes:
+      label: WebMCP type
+      options:
+        - declarative
+        - imperative
+        - mixed
+        - unknown
+    validations:
+      required: true
+
+  - type: dropdown
+    id: webmcp_status
+    attributes:
+      label: WebMCP status
+      options:
+        - confirmed
+        - self-reported
+        - suspected
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence links
+      description: Add links to screenshots, inspector exports, docs, or public threads.
+      placeholder: |
+        https://...
+        https://...
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional notes
+      description: Optional context for reviewers.
+      placeholder: Anything else maintainers should know.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I verified the URL is publicly accessible.
+          required: true
+        - label: I provided evidence supporting the selected WebMCP status.
+          required: true
+        - label: I confirm this submission is not spam or promotional abuse.
+          required: true
