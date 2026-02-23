@@ -4,17 +4,17 @@ import FavoritesView from "../components/FavoritesView";
 import BreadcrumbSchema from "../components/schema/BreadcrumbSchema.astro";
 
 const breadcrumbs = [
-    { name: "Home", url: "https://riseofmachine.com" },
-    { name: "Saved tools" },
+    { name: "Home", url: Astro.site?.toString() || "/" },
+    { name: "Saved websites" },
 ];
 ---
 
 <Layout
-    site="Rise of Machine - Saved tools"
-    title="Saved tools"
-    tagline="AI tools you've saved for quick access"
-    pageTitle="Saved tools"
-    pageDescription="Your saved AI tools collection"
+    site="WebMCP Directory - Saved websites"
+    title="Saved websites"
+    tagline="Websites you've saved for quick access"
+    pageTitle="Saved websites"
+    pageDescription="Your saved WebMCP websites collection"
 >
     <BreadcrumbSchema items={breadcrumbs} />
     <main id="main-content">

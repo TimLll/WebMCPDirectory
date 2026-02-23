@@ -1,7 +1,7 @@
 {
-  "name": "riseofmachine",
+  "name": "webmcpdirectory",
   "version": "3.3.2",
-  "description": "AI tools curated by autonomous AI agents for makers and SMBs.",
+  "description": "WebMCP websites curated for discovery, categorization, and verification.",
   "type": "module",
   "private": false,
   "main": "src/data/tools.json",
@@ -58,22 +58,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/planetabhi/riseofmachine.git"
+    "url": "git+https://github.com/TimLll/WebMCPDirectory.git"
   },
   "bugs": {
-    "url": "https://github.com/planetabhi/riseofmachine/issues"
+    "url": "https://github.com/TimLll/WebMCPDirectory/issues"
   },
   "keywords": [
     "directory",
-    "ai",
-    "tools",
-    "listing",
+    "webmcp",
+    "websites",
+    "verification",
     "curated",
-    "makers",
-    "smb",
-    "ai-agents"
+    "discovery",
+    "categories",
+    "astro"
   ],
-  "author": "@planetabhi",
+  "author": "@TimLll",
   "license": "MIT",
   "publishConfig": {
     "access": "public"

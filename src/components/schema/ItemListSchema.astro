@@ -3,7 +3,7 @@ interface Tool {
     title: string;
     body: string;
     url: string;
-    slug: string;
+    slug?: string;
     tag?: string;
 }
 
@@ -13,16 +13,16 @@ interface Props {
 }
 
 const { items, listName } = Astro.props;
+const siteUrl = Astro.site?.toString().replace(/\/$/, "") || "";
 
 const itemListElements = items.slice(0, 100).map((tool, index) => ({
     "@type": "ListItem",
     position: index + 1,
     item: {
-        "@type": "SoftwareApplication",
+        "@type": "WebPage",
         name: tool.title,
-        url: `https://riseofmachine.com/tools/${tool.slug}`,
+        url: tool.slug && siteUrl ? `${siteUrl}/tools/${tool.slug}` : tool.url,
         description: tool.body,
-        applicationCategory: "MultimediaApplication",
     },
 }));
 

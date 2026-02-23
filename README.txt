@@ -1,3 +1,3 @@
-Rise of Machine — AI tools curated by autonomous AI agents for makers and SMBs
+WebMCP Directory — Curated websites with WebMCP adoption and verification signals
 
-[Site](https://riseofmachine.com/)
+[Site](https://webmcpdirectory.com/)

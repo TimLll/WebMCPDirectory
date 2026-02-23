@@ -3,7 +3,7 @@
     "title": "Alphaxiv",
     "body": "An open academic discussion community.",
     "tag": "Free",
-    "url": "https://www.alphaxiv.org?ref=riseofmachine.com",
+    "url": "https://www.alphaxiv.org",
     "date-added": "2025-06-14",
     "slug": "alphaxiv"
   },
@@ -11,7 +11,7 @@
     "title": "Bagel",
     "body": "AI and cryptography research lab.",
     "tag": "Not applicable",
-    "url": "https://www.bagel.net/?ref=riseofmachine.com",
+    "url": "https://www.bagel.net/",
     "date-added": "2024-12-14",
     "slug": "bagel"
   },
@@ -19,7 +19,7 @@
     "title": "BizNest",
     "body": "Discover the top product opportunities.",
     "tag": "Freemium",
-    "url": "https://www.biznest.io/?ref=riseofmachine.com",
+    "url": "https://www.biznest.io/",
     "date-added": "2024-10-30",
     "slug": "biznest"
   },
@@ -27,7 +27,7 @@
     "title": "Capgo AI",
     "body": "Market research in sheet.",
     "tag": "Freemium",
-    "url": "https://capgo.ai/?ref=riseofmachine.com",
+    "url": "https://capgo.ai/",
     "date-added": "2023-12-24",
     "slug": "capgo-ai"
   },
@@ -35,7 +35,7 @@
     "title": "Chat4data",
     "body": "Data extraction.",
     "tag": "Freemium",
-    "url": "https://chat4data.ai/?ref=riseofmachine.com",
+    "url": "https://chat4data.ai/",
     "date-added": "2025-06-06",
     "slug": "chat4data"
   },
@@ -43,7 +43,7 @@
     "title": "Consensus",
     "body": "Search engine for research.",
     "tag": "Freemium",
-    "url": "https://consensus.app/?ref=riseofmachine.com",
+    "url": "https://consensus.app/",
     "date-added": "2023-12-15",
     "slug": "consensus"
   },
@@ -51,7 +51,7 @@
     "title": "Datviz",
     "body": "Data visualization tool using OpenAI.",
     "tag": "Freemium",
-    "url": "https://datvizai.online/?ref=riseofmachine.com",
+    "url": "https://datvizai.online/",
     "date-added": "2025-06-06",
     "slug": "datviz"
   },
@@ -59,7 +59,7 @@
     "title": "Domain Name Generator",
     "body": "Generate domain names.",
     "tag": "Freemium",
-    "url": "https://refined.so/tools/free-domain-name-generator?ref=riseofmachine.com",
+    "url": "https://refined.so/tools/free-domain-name-generator",
     "date-added": "2024-09-11",
     "slug": "domain-name-generator"
   },
@@ -67,7 +67,7 @@
     "title": "GAAbstract",
     "body": "Graphical research abstract generator.",
     "tag": "Freemium",
-    "url": "https://gaabstract.com?ref=riseofmachine.com",
+    "url": "https://gaabstract.com",
     "date-added": "2026-01-22",
     "slug": "gaabstract"
   },
@@ -75,7 +75,7 @@
     "title": "HeronAI",
     "body": "Ask business data questions, visualize insights.",
     "tag": "Freemium",
-    "url": "https://www.heronai.com/?ref=riseofmachine.com",
+    "url": "https://www.heronai.com/",
     "date-added": "2025-07-16",
     "slug": "heronai"
   },
@@ -83,7 +83,7 @@
     "title": "Isaac",
     "body": "Workspace for researchers.",
     "tag": "Freemium",
-    "url": "https://isaaceditor.com/?ref=riseofmachine.com",
+    "url": "https://isaaceditor.com/",
     "date-added": "2023-12-26",
     "slug": "isaac"
   },
@@ -91,7 +91,7 @@
     "title": "Julius AI",
     "body": "AI data analysis, real-time insights, automation.",
     "tag": "Paid",
-    "url": "https://julius.ai/?ref=riseofmachine.com",
+    "url": "https://julius.ai/",
     "date-added": "2025-06-06",
     "slug": "julius-ai"
   },
@@ -99,7 +99,7 @@
     "title": "MarketAlerts.Ai",
     "body": "Stock market analysis.",
     "tag": "Freemium",
-    "url": "https://www.marketalerts.com/?ref=riseofmachine.com",
+    "url": "https://www.marketalerts.com/",
     "date-added": "2025-06-06",
     "slug": "marketalertsai"
   },
@@ -107,7 +107,7 @@
     "title": "Merlin",
     "body": "Qualitative research with AI.",
     "tag": "Waitlist",
-    "url": "https://talktomerlin.com/?ref=riseofmachine.com",
+    "url": "https://talktomerlin.com/",
     "date-added": "2023-12-28",
     "slug": "merlin"
   },
@@ -115,7 +115,7 @@
     "title": "Morphik.AI",
     "body": "Open source AI-driven search engine.",
     "tag": "Free",
-    "url": "https://morphik.ai?ref=riseofmachine.com",
+    "url": "https://morphik.ai",
     "date-added": "2025-06-14",
     "slug": "morphikai"
   },
@@ -123,7 +123,7 @@
     "title": "Ontosight.ai",
     "body": "AI research assistant for smarter insights.",
     "tag": "Not available",
-    "url": "https://ontosight.ai/?ref=riseofmachine.com",
+    "url": "https://ontosight.ai/",
     "date-added": "2025-06-01",
     "slug": "ontosightai"
   },
@@ -131,7 +131,7 @@
     "title": "Osum",
     "body": "Market research.",
     "tag": "Freemium",
-    "url": "https://osum.com/?ref=riseofmachine.com",
+    "url": "https://osum.com/",
     "date-added": "2025-06-06",
     "slug": "osum"
   },
@@ -139,14 +139,14 @@
     "title": "Papers",
     "body": "Academic research.",
     "tag": "Not available",
-    "url": "https://www.papersapp.com/?ref=riseofmachine.com",
+    "url": "https://www.papersapp.com/",
     "date-added": "2025-06-06",
     "slug": "papers"
   },
   {
     "title": "Resea AI",
     "body": "AI research agent for academic research.",
-    "url": "https://resea.ai/?ref=riseofmachine.com",
+    "url": "https://resea.ai/",
     "tag": "Freemium",
     "date-added": "2025-07-31",
     "slug": "resea-ai"
@@ -155,7 +155,7 @@
     "title": "Research",
     "body": "For reading and organizing research with AI.",
     "tag": "Freemium",
-    "url": "https://un.ms/research?ref=riseofmachine.com",
+    "url": "https://un.ms/research",
     "date-added": "2025-11-06",
     "slug": "research"
   },
@@ -163,7 +163,7 @@
     "title": "Rivalout",
     "body": "Competitive analysis.",
     "tag": "Not available",
-    "url": "https://rivalout.com/?ref=riseofmachine.com",
+    "url": "https://rivalout.com/",
     "date-added": "2025-06-06",
     "slug": "rivalout"
   },
@@ -171,7 +171,7 @@
     "title": "Sagehood",
     "body": "U.S. stock portfolio supercharged by AI.",
     "tag": "Not available",
-    "url": "https://sagehood.ai/?ref=riseofmachine.com",
+    "url": "https://sagehood.ai/",
     "date-added": "2025-06-06",
     "slug": "sagehood"
   },
@@ -179,7 +179,7 @@
     "title": "Scite",
     "body": "Smart citations and deep research insights.",
     "tag": "Freemium",
-    "url": "https://www.scite.ai/?ref=riseofmachine.com",
+    "url": "https://www.scite.ai/",
     "date-added": "2025-06-06",
     "slug": "scite"
   },
@@ -187,7 +187,7 @@
     "title": "Silatus",
     "body": "Research automation engine.",
     "tag": "From $14/mo",
-    "url": "https://silatus.com/?ref=riseofmachine.com",
+    "url": "https://silatus.com/",
     "date-added": "2023-12-27",
     "slug": "silatus"
   },
@@ -195,7 +195,7 @@
     "title": "SoBrief",
     "body": "Free book summaries in 40 languages, paid audio.",
     "tag": "Freemium",
-    "url": "https://sobrief.com/?ref=riseofmachine.com",
+    "url": "https://sobrief.com/",
     "date-added": "2025-06-06",
     "slug": "sobrief"
   },
@@ -203,7 +203,7 @@
     "title": "STORM",
     "body": "Get a Wikipedia-like report on your topic.",
     "tag": "Freemium",
-    "url": "https://storm.genie.stanford.edu/?ref=riseofmachine.com",
+    "url": "https://storm.genie.stanford.edu/",
     "date-added": "2025-06-29",
     "slug": "storm"
   },
@@ -211,7 +211,7 @@
     "title": "Synthetic Users",
     "body": "Test product with AI participants.",
     "tag": "From $99/mo",
-    "url": "https://www.syntheticusers.com/?ref=riseofmachine.com",
+    "url": "https://www.syntheticusers.com/",
     "date-added": "2023-12-26",
     "slug": "synthetic-users"
   },
@@ -219,7 +219,7 @@
     "title": "Wokelo",
     "body": "Investment research and due diligence.",
     "tag": "Not available",
-    "url": "https://www.wokelo.ai/?ref=riseofmachine.com",
+    "url": "https://www.wokelo.ai/",
     "date-added": "2023-12-27",
     "slug": "wokelo"
   }

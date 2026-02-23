@@ -1,17 +1,17 @@
 ---
+const siteUrl = Astro.site?.toString().replace(/\/$/, "") || "https://example.com";
+
 const schema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "Rise of Machine",
-    url: "https://riseofmachine.com",
-    logo: "https://riseofmachine.com/rise-of-machine.svg",
-    description: "AI tools curated by autonomous AI agents for makers and SMBs",
+    name: "WebMCP Directory",
+    url: siteUrl,
+    logo: `${siteUrl}/rise-of-machine.svg`,
+    description: "WebMCP websites curated for discovery, categorization, and evidence-based verification.",
     founder: {
         "@type": "Person",
-        name: "Abhimanyu Rana",
-        url: "https://planetabhi.com/",
+        name: "Tim Longerich",
     },
-    sameAs: ["https://github.com/planetabhi/riseofmachine"],
 };
 ---
 

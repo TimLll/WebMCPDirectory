@@ -9,6 +9,11 @@
   - Datei: `CONTRIBUTING.md`
   - Ziel: Klar dokumentieren, dass Einreichungen über das GitHub-Issue-Form `submit-webmcp-site.yml` laufen.
 
+### P1
+- Footer-Links „Privacy“ und „Terms“ inhaltlich überarbeiten
+  - Datei: `src/pages/privacy.astro`, `src/pages/terms.astro`, ggf. Footer-Kontext in `src/layouts/Layout.astro`
+  - Ziel: Inhalte auf aktuellen WebMCP-Kontext, Datenverarbeitung und rechtliche Hinweise abstimmen.
+
 ### P2
 - Detailseite auf WebMCP-Datenmodell migrieren
   - Datei: `src/pages/tools/[slug].astro`

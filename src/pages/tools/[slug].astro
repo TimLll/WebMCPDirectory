@@ -59,7 +59,8 @@ const formatDate = (dateStr: string) => {
 
 const domain = extractDomain(tool.url || "");
 const formattedDate = formatDate(tool["date-added"]);
-const canonicalUrl = `https://riseofmachine.com/tools/${tool.slug}`;
+const siteUrl = Astro.site?.toString().replace(/\/$/, "") || "";
+const canonicalUrl = siteUrl ? `${siteUrl}/tools/${tool.slug}` : `/tools/${tool.slug}`;
 const faviconUrl = `/favicons/${slug}.png`;
 const fallbackPath = category === "all" ? "/" : `/${category}`;
 
@@ -73,13 +74,13 @@ const seoTitle = meta.title || tool.title;
 const seoDescription = meta.description || tool.body;
 const seoOgImage = faviconUrl;
 const seoOgType = "website";
-const seoOgSiteName = "Rise of Machine";
+const seoOgSiteName = "WebMCP Directory";
 
 const encodedShareText = encodeURIComponent(
   `Check out ${tool.title} - ${tool.body}`,
 );
 const encodedCanonicalUrl = encodeURIComponent(canonicalUrl);
-const xShareUrl = `https://x.com/intent/post?text=${encodedShareText}&url=${encodedCanonicalUrl}&via=planetabhi`;
+const xShareUrl = `https://x.com/intent/post?text=${encodedShareText}&url=${encodedCanonicalUrl}`;
 const linkedinShareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodedCanonicalUrl}`;
 const redditShareUrl = `https://www.reddit.com/submit?url=${encodedCanonicalUrl}&title=${encodedShareText}`;
 
@@ -89,14 +90,14 @@ const relatedTools = otherTools.sort(() => Math.random() - 0.5).slice(0, 4);
 
 const categoryTitle = category.charAt(0).toUpperCase() + category.slice(1);
 const breadcrumbs = [
-  { name: "Home", url: "https://riseofmachine.com" },
-  { name: categoryTitle, url: `https://riseofmachine.com/${category}` },
+  { name: "Home", url: siteUrl || "/" },
+  { name: categoryTitle, url: siteUrl ? `${siteUrl}/${category}` : `/${category}` },
   { name: tool.title },
 ];
 ---
 
 <Layout
-  site={`Rise of Machine - ${tool.title}`}
+  site={`WebMCP Directory - ${tool.title}`}
   title={tool.title}
   tagline={tool.body}
   pageTitle={seoTitle}

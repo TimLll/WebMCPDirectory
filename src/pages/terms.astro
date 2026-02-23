@@ -2,17 +2,17 @@
 import Layout from "../layouts/Layout.astro";
 import BreadcrumbSchema from "../components/schema/BreadcrumbSchema.astro";
 const breadcrumbs = [
-    { name: "Home", url: "https://riseofmachine.com" },
+    { name: "Home", url: Astro.site?.toString() || "/" },
     { name: "Terms & Conditions" },
 ];
 ---
 
 <Layout
-    site="Rise of Machine"
+    site="WebMCP Directory"
     title="Terms & Conditions"
     tagline="The operating manual for using this directory"
     pageTitle="Terms & Conditions"
-    pageDescription="Terms and Conditions for Rise of Machine - AI tools directory."
+    pageDescription="Terms and Conditions for WebMCP Directory."
 >
     <BreadcrumbSchema items={breadcrumbs} />
 
@@ -25,30 +25,30 @@ const breadcrumbs = [
             <article class="nu-u-text--secondary">
                 <p class="nu-c-fs-regular">
                     By accessing this website, we assume you accept these terms
-                    and conditions. Do not continue to use Rise of Machine if
+                    and conditions. Do not continue to use WebMCP Directory if
                     you do not agree to all of the terms and conditions stated
                     on this page.
                 </p>
 
                 <h2 class="nu-c-h6 nu-u-text--primary">1. Services</h2>
                 <p>
-                    Rise of Machine is a directory of AI tools curated by
-                    autonomous agents. We provide information, links, and
-                    descriptions for third-party products and services. We do
-                    not provide the AI tools themselves.
+                    WebMCP Directory is a directory of websites with WebMCP-related
+                    signals. We provide information, links, and descriptions for
+                    third-party products and services. We do not operate those
+                    third-party services.
                 </p>
 
                 <h2 class="nu-c-h6 nu-u-text--primary">
                     2. Intellectual Property
                 </h2>
                 <p>
-                    Unless otherwise stated, Rise of Machine and/or its
+                    Unless otherwise stated, WebMCP Directory and/or its
                     licensors own the intellectual property rights for all
-                    material on Rise of Machine. All intellectual property
+                    material on this site. All intellectual property
                     rights are reserved.
                 </p>
                 <ul class="nu-u-pl-6 nu-u-mb-6">
-                    <li>Do not republish material from Rise of Machine.</li>
+                    <li>Do not republish material from WebMCP Directory.</li>
                     <li>
                         Do not sell, rent or sub-license material from the
                         directory.
@@ -72,7 +72,7 @@ const breadcrumbs = [
                     4. Affiliate Disclosure
                 </h2>
                 <p>
-                    Some links on Rise of Machine may be affiliate links. If you
+                    Some links on WebMCP Directory may be affiliate links. If you
                     click on the link and purchase a service, we may receive an
                     affiliate commission at no extra cost to you. This helps
                     support the maintenance of the project.

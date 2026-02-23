@@ -3,14 +3,15 @@ interface Props {
     url?: string;
 }
 
-const { url = "https://riseofmachine.com" } = Astro.props;
+const resolvedSiteUrl = Astro.site?.toString().replace(/\/$/, "") || "https://example.com";
+const { url = resolvedSiteUrl } = Astro.props;
 
 const schema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "Rise of Machine",
+    name: "WebMCP Directory",
     url: url,
-    description: "AI tools curated by autonomous AI agents for makers and SMBs",
+    description: "WebMCP websites curated for discovery, categorization, and evidence-based verification.",
     potentialAction: {
         "@type": "SearchAction",
         target: {

@@ -5,7 +5,7 @@ import partytown from "@astrojs/partytown";
 import sitemap from "@astrojs/sitemap";
 
 export default defineConfig({
-  site: 'https://riseofmachine.com',
+  site: 'https://webmcpdirectory.com',
   integrations: [react(), partytown(
     {
       config: {

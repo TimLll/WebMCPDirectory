@@ -3,7 +3,7 @@
     "title": "Audiocraft",
     "body": "Open source library for audio/music generation.",
     "tag": "Free",
-    "url": "https://github.com/facebookresearch/audiocraft?ref=riseofmachine.com",
+    "url": "https://github.com/facebookresearch/audiocraft",
     "date-added": "2025-06-14",
     "slug": "audiocraft"
   },
@@ -11,7 +11,7 @@
     "title": "AudioStrip",
     "body": "Split vocals from backing music.",
     "tag": "Freemium",
-    "url": "https://www.audiostrip.co.uk/?ref=riseofmachine.com",
+    "url": "https://www.audiostrip.co.uk/",
     "date-added": "2023-12-11",
     "slug": "audiostrip"
   },
@@ -19,7 +19,7 @@
     "title": "Beatoven",
     "body": "Create royalty free music.",
     "tag": "Freemium",
-    "url": "https://www.beatoven.ai/?ref=riseofmachine.com",
+    "url": "https://www.beatoven.ai/",
     "date-added": "2023-12-11",
     "slug": "beatoven"
   },
@@ -27,7 +27,7 @@
     "title": "Beatviz",
     "body": "Music audio to video.",
     "tag": "From $19.9/mo",
-    "url": "https://beatviz.com?ref=riseofmachine.com",
+    "url": "https://beatviz.com",
     "date-added": "2026-01-27",
     "slug": "beatviz"
   },
@@ -35,7 +35,7 @@
     "title": "Elevenlabs/sound-effects",
     "body": "Imagine a sound and bring it to life.",
     "tag": "Free",
-    "url": "https://elevenlabs.io/app/sound-effects?ref=riseofmachine.com",
+    "url": "https://elevenlabs.io/app/sound-effects",
     "date-added": "2025-06-14",
     "slug": "elevenlabssound-effects"
   },
@@ -43,7 +43,7 @@
     "title": "Imagetomusic",
     "body": "AI Image to Music Generator",
     "tag": "Freemium",
-    "url": "https://imagetomusic.top/?ref=riseofmachine.com",
+    "url": "https://imagetomusic.top/",
     "date-added": "2024-03-23",
     "slug": "imagetomusic"
   },
@@ -51,7 +51,7 @@
     "title": "Jen",
     "body": "Idea to a full track.",
     "tag": "Waitlist",
-    "url": "https://www.jenmusic.ai/?ref=riseofmachine.com",
+    "url": "https://www.jenmusic.ai/",
     "date-added": "2023-12-26",
     "slug": "jen"
   },
@@ -59,7 +59,7 @@
     "title": "Lyrics to Song",
     "body": "Create songs from your lyrics using AI.",
     "tag": "Freemium",
-    "url": "https://lyricstosong.io/?ref=riseofmachine.com",
+    "url": "https://lyricstosong.io/",
     "date-added": "2025-10-11",
     "slug": "lyrics-to-song"
   },
@@ -67,7 +67,7 @@
     "title": "Mubert",
     "body": "AI royalty-free music for creators & businesses.",
     "tag": "Freemium",
-    "url": "https://mubert.com/?ref=riseofmachine.com",
+    "url": "https://mubert.com/",
     "date-added": "2025-06-06",
     "slug": "mubert"
   },
@@ -75,7 +75,7 @@
     "title": "Mureka.AI",
     "body": "Text to music",
     "tag": "Freemium",
-    "url": "https://www.mureka.ai?ref=riseofmachine.com",
+    "url": "https://www.mureka.ai",
     "date-added": "2025-06-14",
     "slug": "murekaai"
   },
@@ -83,7 +83,7 @@
     "title": "MuseGen",
     "body": "Generate music from text prompts.",
     "tag": "Freemium",
-    "url": "https://musegen.org?ref=riseofmachine.com",
+    "url": "https://musegen.org",
     "date-added": "2026-01-22",
     "slug": "musegen"
   },
@@ -91,7 +91,7 @@
     "title": "Music AI",
     "body": "Audio intelligence platform.",
     "tag": "Freemium",
-    "url": "https://music.ai/?ref=riseofmachine.com",
+    "url": "https://music.ai/",
     "date-added": "2023-12-24",
     "slug": "music-ai"
   },
@@ -99,7 +99,7 @@
     "title": "Music Generator",
     "body": "Music creation.",
     "tag": "Freemium",
-    "url": "https://musicgeneratorai.com/?ref=riseofmachine.com",
+    "url": "https://musicgeneratorai.com/",
     "date-added": "2025-06-06",
     "slug": "music-generator"
   },
@@ -107,7 +107,7 @@
     "title": "Orange Music",
     "body": "Turn prompts into songs.",
     "tag": "Freemium",
-    "url": "https://oaimusicgen.com?ref=riseofmachine.com",
+    "url": "https://oaimusicgen.com",
     "date-added": "2026-01-04",
     "slug": "orange-music"
   },
@@ -115,7 +115,7 @@
     "title": "Raplyrics",
     "body": "Music creation.",
     "tag": "Free",
-    "url": "https://raplyrics.eu/?ref=riseofmachine.com",
+    "url": "https://raplyrics.eu/",
     "date-added": "2025-06-06",
     "slug": "raplyrics"
   },
@@ -123,7 +123,7 @@
     "title": "Shazam",
     "body": "Download the shazam app for music recognition.",
     "tag": "Free",
-    "url": "https://www.shazam.com?ref=riseofmachine.com",
+    "url": "https://www.shazam.com",
     "date-added": "2025-06-14",
     "slug": "shazam"
   },
@@ -131,7 +131,7 @@
     "title": "Snon Lyric",
     "body": "AI-powered lyrics generation for music creators.",
     "tag": "Not available",
-    "url": "https://www.snonlyric.com/?ref=riseofmachine.com",
+    "url": "https://www.snonlyric.com/",
     "date-added": "2025-06-03",
     "slug": "snon-lyric"
   },
@@ -139,7 +139,7 @@
     "title": "Song Generator",
     "body": "AI music generator free online.",
     "tag": "Freemium",
-    "url": "https://songgenerator.io/?ref=riseofmachine.com",
+    "url": "https://songgenerator.io/",
     "date-added": "2024-10-23",
     "slug": "song-generator"
   },
@@ -147,7 +147,7 @@
     "title": "Songburst",
     "body": "Generate music with AI",
     "tag": "Free",
-    "url": "https://www.songburst.ai/?ref=riseofmachine.com",
+    "url": "https://www.songburst.ai/",
     "date-added": "2023-12-28",
     "slug": "songburst"
   },
@@ -155,7 +155,7 @@
     "title": "Soundraw",
     "body": "AI-generated, customizable royalty-free music.",
     "tag": "Freemium",
-    "url": "https://soundraw.io/?ref=riseofmachine.com",
+    "url": "https://soundraw.io/",
     "date-added": "2025-06-06",
     "slug": "soundraw"
   },
@@ -163,7 +163,7 @@
     "title": "Soundry",
     "body": "Text-to-sample generation.",
     "tag": "Freemium",
-    "url": "https://soundry.ai/?ref=riseofmachine.com",
+    "url": "https://soundry.ai/",
     "date-added": "2023-12-26",
     "slug": "soundry"
   },
@@ -171,7 +171,7 @@
     "title": "Sprunki",
     "body": "Create music with unique characters and soundscapes.",
     "tag": "Free",
-    "url": "https://sprunki.io?ref=riseofmachine.com",
+    "url": "https://sprunki.io",
     "date-added": "2025-06-03",
     "slug": "sprunki"
   },
@@ -179,7 +179,7 @@
     "title": "Stable Audio",
     "body": "Create music with AI.",
     "tag": "Freemium",
-    "url": "https://www.stableaudio.com/?ref=riseofmachine.com",
+    "url": "https://www.stableaudio.com/",
     "date-added": "2023-12-11",
     "slug": "stable-audio"
   },
@@ -187,7 +187,7 @@
     "title": "Suno",
     "body": "Make a song.",
     "tag": "Freemium",
-    "url": "https://www.suno.ai/?ref=riseofmachine.com",
+    "url": "https://www.suno.ai/",
     "date-added": "2023-12-22",
     "slug": "suno"
   },
@@ -195,7 +195,7 @@
     "title": "TemPolor",
     "body": "Royalty-free music tailored to creators’ vision.",
     "tag": "Freemium",
-    "url": "https://www.tempolor.com/?ref=riseofmachine.com",
+    "url": "https://www.tempolor.com/",
     "date-added": "2025-06-06",
     "slug": "tempolor"
   },
@@ -203,7 +203,7 @@
     "title": "ToMusic",
     "body": "Text to music generator.",
     "tag": "Freemium",
-    "url": "https://tomusic.ai/?ref=riseofmachine.com",
+    "url": "https://tomusic.ai/",
     "date-added": "2024-10-22",
     "slug": "tomusic"
   },
@@ -211,7 +211,7 @@
     "title": "Tracksy",
     "body": "AI assistant to create music.",
     "tag": "Freemium",
-    "url": "https://www.tracksy.ai/?ref=riseofmachine.com",
+    "url": "https://www.tracksy.ai/",
     "date-added": "2023-12-24",
     "slug": "tracksy"
   },
@@ -219,7 +219,7 @@
     "title": "Vocal Remover",
     "body": "Separate voice from music out of a song.",
     "tag": "Free",
-    "url": "https://vocalremover.org/?ref=riseofmachine.com",
+    "url": "https://vocalremover.org/",
     "date-added": "2023-12-29",
     "slug": "vocal-remover"
   },
@@ -227,7 +227,7 @@
     "title": "Wondera",
     "body": "Music creation.",
     "tag": "Freemium",
-    "url": "https://www.wondera.ai/?ref=riseofmachine.com",
+    "url": "https://www.wondera.ai/",
     "date-added": "2025-06-06",
     "slug": "wondera"
   }

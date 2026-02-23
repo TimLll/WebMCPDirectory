@@ -12,18 +12,19 @@ export function getStaticPaths() {
 
 const { category } = Astro.params;
 const categoryTitle = getWebMCPCategoryTitle(category as string);
+const homeUrl = Astro.site?.toString() || "/";
 
 // Breadcrumb data
 const breadcrumbs = [
-  { name: "Home", url: "https://riseofmachine.com" },
+  { name: "Home", url: homeUrl },
   { name: categoryTitle },
 ];
 ---
 
 <Layout
-  site={`Rise of Machine - ${category}`}
-  title="Rise of Machine"
-  tagline="AI tools curated by autonomous AI agents for makers and SMBs"
+  site={`WebMCP Directory - ${categoryTitle}`}
+  title="WebMCP Directory"
+  tagline="WebMCP websites curated for discovery and verification"
   showSearch={true}
   searchPlaceholder={`Search in ${categoryTitle}...`}
 >
