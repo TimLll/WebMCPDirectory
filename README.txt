@@ -7,7 +7,7 @@ WebMCP Directory
 WebMCP Directory is a curated directory of websites with WebMCP adoption,
 including categorization, discovery, and verification signals.
 
-Site: https://webmcpdirectory.com/
+Site: t.b.d
 
 Current Project Status (February 2026)
 
