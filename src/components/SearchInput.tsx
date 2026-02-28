@@ -21,25 +21,6 @@ export default function SearchInput({
         };
     }, []);
 
-    useEffect(() => {
-        const handleKeyDown = (e: KeyboardEvent) => {
-            if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
-                e.preventDefault();
-                inputRef.current?.focus();
-            }
-            if (e.key === 'Escape' && document.activeElement === inputRef.current) {
-                inputRef.current?.blur();
-                if (query) {
-                    setQuery('');
-                    dispatchSearch('');
-                }
-            }
-        };
-
-        window.addEventListener('keydown', handleKeyDown);
-        return () => window.removeEventListener('keydown', handleKeyDown);
-    }, [query]);
-
     const dispatchSearch = (value: string) => {
         window.dispatchEvent(new CustomEvent('tools:search', {
             detail: { query: value }
@@ -65,39 +46,22 @@ export default function SearchInput({
         inputRef.current?.focus();
     };
 
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-        if (debounceRef.current) {
-            clearTimeout(debounceRef.current);
-            debounceRef.current = null;
-        }
-        dispatchSearch(query);
-        inputRef.current?.focus();
-    };
-
     return (
         <div className="search-container">
-            <form className="search-input-wrapper" onSubmit={handleSubmit}>
-                <button
-                    className="search-submit"
-                    type="submit"
-                    aria-label="Submit search"
-                    title="Search"
+            <div className="search-input-wrapper">
+                <svg
+                    className="search-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth={1.5}
                 >
-                    <svg
-                        className="search-icon"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth={1.5}
-                    >
-                        <circle cx="11" cy="11" r="8" />
-                        <path d="m21 21-4.35-4.35" />
-                    </svg>
-                </button>
+                    <circle cx="11" cy="11" r="8" />
+                    <path d="m21 21-4.35-4.35" />
+                </svg>
                 <input
                     ref={inputRef}
                     type="text"
@@ -119,8 +83,7 @@ export default function SearchInput({
                         </svg>
                     </button>
                 )}
-                <kbd className="search-shortcut">⌘K</kbd>
-            </form>
+            </div>
         </div>
     );
 }
