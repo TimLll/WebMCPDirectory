@@ -5,19 +5,9 @@
 ## Priorität (Stand: 2026-02-28)
 
 ### P1
-- CONTRIBUTING auf WebMCP-Submission-Flow aktualisieren
-	- Datei: `CONTRIBUTING.md`
-	- Ziel: Klar dokumentieren, dass Einreichungen über das GitHub-Issue-Form `submit-webmcp-site.yml` laufen.
-
-### P1
-- Footer-Links „Privacy“ und „Terms“ inhaltlich überarbeiten
-	- Datei: `src/pages/privacy.astro`, `src/pages/terms.astro`, ggf. Footer-Kontext in `src/layouts/Layout.astro`
-	- Ziel: Inhalte auf aktuellen WebMCP-Kontext, Datenverarbeitung und rechtliche Hinweise abstimmen.
-
-### P1
-- Submit-Button-Ende-zu-Ende-Funktionalität prüfen
-	- Datei: `src/layouts/Layout.astro` (Link-Ziel), ggf. Issue-Template unter `.github/ISSUE_TEMPLATE/submit-webmcp-site.yml`
-	- Ziel: Sicherstellen, dass der Button auf das korrekte Repository/Template zeigt und der Submission-Flow vollständig funktioniert.
+- Search-Bar: Shortcut + Search-Button-Bug beheben
+	- Datei: `src/components/SearchInput.tsx`
+	- Ziel: Shortcut (`⌘K`/`Ctrl+K`) und Klick auf den Search-Button müssen die Suche zuverlässig auslösen; aktuell reagieren beide nicht wie erwartet.
 
 ### P1
 - Fire-Icon neben Submit-Button auf Theme-Blau umstellen
@@ -25,9 +15,14 @@
 	- Ziel: Das Flamme-Symbol nutzt die dominante blaue Theme-Farbe (statt „Feuer“-Farbe) und bleibt visuell konsistent mit primären UI-Elementen.
 
 ### P1
-- Search-Bar: Shortcut + Search-Button-Bug beheben
-	- Datei: `src/components/SearchInput.tsx`
-	- Ziel: Shortcut (`⌘K`/`Ctrl+K`) und Klick auf den Search-Button müssen die Suche zuverlässig auslösen; aktuell reagieren beide nicht wie erwartet.
+- Status-Label „self-reported“ verständlicher darstellen
+	- Datei: `src/components/CardsContainer.tsx`, ggf. `src/components/Card.tsx`
+	- Ziel: Statt rein technischem Wortlaut eine nutzerfreundliche Bezeichnung anzeigen (z. B. „Self reported“), optional mit kurzer Erklärung/Tooltip zur Herkunft der Einstufung.
+
+### P1
+- Submit-Button-Ende-zu-Ende-Funktionalität prüfen
+	- Datei: `src/layouts/Layout.astro` (Link-Ziel), ggf. Issue-Template unter `.github/ISSUE_TEMPLATE/submit-webmcp-site.yml`
+	- Ziel: Sicherstellen, dass der Button auf das korrekte Repository/Template zeigt und der Submission-Flow vollständig funktioniert.
 
 ### P1
 - Default-Sortierung der Websites alphabetisch ergänzen
@@ -38,6 +33,16 @@
 - Neue Hintergrundfarbe für Header und Karten definieren
 	- Datei: `src/layouts/Layout.astro`, `src/components/Card.css`
 	- Ziel: Für Masthead-Container und Kartenhintergrund eine abgestimmte neue Theme-Farbe einführen (über Design-Token/Variablen, keine Hardcodes).
+
+### P1
+- Footer-Links „Privacy“ und „Terms“ inhaltlich überarbeiten
+	- Datei: `src/pages/privacy.astro`, `src/pages/terms.astro`, ggf. Footer-Kontext in `src/layouts/Layout.astro`
+	- Ziel: Inhalte auf aktuellen WebMCP-Kontext, Datenverarbeitung und rechtliche Hinweise abstimmen.
+
+### P1
+- CONTRIBUTING auf WebMCP-Submission-Flow aktualisieren
+	- Datei: `CONTRIBUTING.md`
+	- Ziel: Klar dokumentieren, dass Einreichungen über das GitHub-Issue-Form `submit-webmcp-site.yml` laufen.
 
 ### P2
 - Detailseite auf WebMCP-Datenmodell migrieren
@@ -59,6 +64,8 @@
 - Zwei gewünschte P1-Punkte präzise integriert:
 	- Search-Bar: Shortcut + Search-Button-Bug als konkreter Fix-Task.
 	- Fire-Icon: Farbvorgabe auf dominantes Theme-Blau.
+- Neuer P1-Punkt ergänzt: Status-Label „self-reported“ nutzerfreundlicher darstellen.
+- P1-Reihenfolge nach aktuellem UX-Impact neu priorisiert (Search-Fix zuerst).
 
 ## Warum?
 - Der lokale Stand war unvollständig gegenüber dem Remote-Backlog.

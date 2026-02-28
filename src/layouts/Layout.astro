@@ -495,18 +495,18 @@ const {
         transition:
             transform 0.2s ease,
             filter 0.2s ease;
-        filter: grayscale(100%);
+        filter: grayscale(100%) brightness(0.8);
         opacity: 0.6;
     }
 
     .new-filter-toggle:hover .fire-emoji {
         transform: scale(1.1);
-        filter: grayscale(0%);
+        filter: grayscale(0%) hue-rotate(200deg) saturate(220%) brightness(0.95);
         opacity: 1;
     }
 
     .new-filter-toggle[aria-pressed="true"] .fire-emoji {
-        filter: grayscale(0%);
+        filter: grayscale(0%) hue-rotate(200deg) saturate(220%) brightness(0.95);
         opacity: 1;
     }
 

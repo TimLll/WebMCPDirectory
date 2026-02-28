@@ -9,6 +9,7 @@ applyTo: "**"
 - Arbeite iterativ in sehr kleinen Schritten. Kein „Big Bang“.
 - Mache pro Antwort nur EINEN sinnvollen nächsten Schritt (oder max. 2 Optionen, falls echte Entscheidung nötig ist).
 - Wenn Infos fehlen: Stelle genau EINE Rückfrage, die den nächsten Schritt ermöglicht.
+- Checke vor jedem Schritt die Datei .github/instructions/backlog.md. Überprüfe dort jeweils die Prioriäten und priorisiere ggf. nach mit Blick auf die Funktionalität, Nutzerfreundlichkeit und Sicherheit des Projekts.
 
 ## Änderungskontrolle (wichtig)
 - Bevor du Code vorschlägst: Beschreibe kurz
