@@ -23,7 +23,7 @@
     padding-left: var(--spacing-09);
     padding-right: var(--spacing-12);
     border: 0.5px solid var(--border-muted);
-    border-radius: var(--spacing-00);
+    border-radius: var(--radius-ui);
     background-color: var(--background);
     color: var(--content-primary);
     font-size: var(--desktop-body-sm);
@@ -50,7 +50,7 @@
     background: none;
     color: var(--content-secondary);
     cursor: var(--c-pointer);
-    border-radius: var(--spacing-00);
+    border-radius: var(--radius-ui);
 }
 
 .search-clear:hover {

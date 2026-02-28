@@ -231,6 +231,7 @@ const {
     }
     :root {
         --accent: var(--link);
+        --radius-ui: var(--spacing-02);
         --body-copy: "ROM-Regular", var(--system-ui);
         --monospace: "ROM-Mono", var(--monospace-code);
         --body-strong: "ROM-Bold", var(--system-ui);
@@ -366,6 +367,7 @@ const {
         border: 0.5px solid var(--border-muted);
         padding: var(--spacing-08);
         background-color: var(--background);
+        border-radius: var(--radius-ui);
         /* background: linear-gradient(90deg,rgba(186, 186, 186, 1) 0%, rgba(232, 232, 232, 1) 100%); */
     }
     .masthead-kicker {
@@ -405,7 +407,7 @@ const {
         color: inherit;
         color: var(--content-secondary);
         background-color: var(--background);
-        border-radius: var(--spacing-00);
+        border-radius: var(--radius-ui);
         font-size: var(--desktop-body-sm);
         line-height: var(--lh-desktop-body-sm);
         transition: transform 0.2s ease;
@@ -442,7 +444,7 @@ const {
         border: 0.5px solid var(--border-muted);
         background-color: var(--background);
         color: var(--content-secondary);
-        border-radius: var(--spacing-00);
+        border-radius: var(--radius-ui);
         cursor: var(--c-pointer);
         transition: transform 0.2s ease;
     }
@@ -484,7 +486,7 @@ const {
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: var(--spacing-00);
+        border-radius: var(--radius-ui);
         transition: transform 0.1s ease;
         position: relative;
         margin-right: var(--spacing-03);
@@ -526,7 +528,7 @@ const {
         text-decoration: none;
         font-size: var(--desktop-body-sm);
         line-height: var(--lh-desktop-body-sm);
-        border-radius: var(--spacing-00);
+        border-radius: var(--radius-ui);
         outline: none;
         transition: transform 0.2s ease;
     }

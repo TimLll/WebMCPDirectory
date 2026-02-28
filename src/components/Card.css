@@ -3,7 +3,7 @@
     display: flex;
     background-color: var(--background);
     background-position: 100%;
-    border-radius: var(--spacing-00);
+    border-radius: var(--radius-ui);
     height: 8rem;
     position: relative;
     --shadow-color: rgb(0 0 0 / 0.04);
@@ -50,7 +50,7 @@ p.distribution {
 span.tag {
     background-color: var(--background-selected);
     padding: calc(0.12rem - 1px) calc(0.24rem - 1px);
-    border-radius: var(--spacing-00);
+    border-radius: var(--radius-ui);
     display: inline-block;
     color: var(--content-secondary);
     margin-top: var(--spacing-08);
@@ -63,7 +63,7 @@ span.tag {
 span.tag-new {
     background-color: var(--background-selected);
     padding: calc(0.12rem - 1px) calc(0.24rem - 1px);
-    border-radius: var(--spacing-00);
+    border-radius: var(--radius-ui);
     display: inline-block;
     margin-top: var(--spacing-08);
     font-size: var(--desktop-caption);
