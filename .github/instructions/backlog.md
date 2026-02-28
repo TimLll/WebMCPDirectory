@@ -5,16 +5,6 @@
 ## Priorität (Stand: 2026-02-28)
 
 ### P1
-- Search-Bar: Shortcut + Search-Button-Bug beheben
-	- Datei: `src/components/SearchInput.tsx`
-	- Ziel: Shortcut (`⌘K`/`Ctrl+K`) und Klick auf den Search-Button müssen die Suche zuverlässig auslösen; aktuell reagieren beide nicht wie erwartet.
-
-### P1
-- Fire-Icon neben Submit-Button auf Theme-Blau umstellen
-	- Datei: `src/layouts/Layout.astro`
-	- Ziel: Das Flamme-Symbol nutzt die dominante blaue Theme-Farbe (statt „Feuer“-Farbe) und bleibt visuell konsistent mit primären UI-Elementen.
-
-### P1
 - Status-Label „self-reported“ verständlicher darstellen
 	- Datei: `src/components/CardsContainer.tsx`, ggf. `src/components/Card.tsx`
 	- Ziel: Statt rein technischem Wortlaut eine nutzerfreundliche Bezeichnung anzeigen (z. B. „Self reported“), optional mit kurzer Erklärung/Tooltip zur Herkunft der Einstufung.
