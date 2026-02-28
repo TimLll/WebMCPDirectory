@@ -33,4 +33,4 @@ applyTo: "**"
 
 ## Git & Commits (Arbeitsstil)
 - Denke in kleinen Commits: ein Commit = ein klarer Zweck.
-- Gib für jeden Schritt einen Commit-Text im Conventional-Commits-Stil aus (feat/fix/refactor/test/docs/chore).
+- Gib für jede Codeänderung einen Commit-Text im Conventional-Commits-Stil aus (feat/fix/refactor/test/docs/chore).
